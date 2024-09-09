@@ -3,55 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StuCo - Profile Personalization</title>
+    <title>StuCo - Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="form-container">
-        <div class="form-box">
-            <h2>Personalize Your Profile</h2>
-            <form action="home.html" method="post" enctype="multipart/form-data">
-                
-                <!-- Grade -->
-                <div class="input-group">
-                    <label for="grade">Confirm Your Grade:</label>
-                    <input type="text" id="grade" name="grade" placeholder="e.g., 12th grade" required>
-                </div>
-
-                <!-- Extracurricular Activities -->
-                <div class="input-group">
-                    <label for="ecs">Extracurricular Activities (ECs):</label>
-                    <textarea id="ecs" name="ecs" rows="3" placeholder="Describe your extracurriculars..." required></textarea>
-                </div>
-
-                <!-- Awards -->
-                <div class="input-group">
-                    <label for="awards">Awards:</label>
-                    <textarea id="awards" name="awards" rows="3" placeholder="List your awards..." required></textarea>
-                </div>
-
-                <!-- Test Scores -->
-                <div class="input-group">
-                    <label for="test-scores">Test Scores:</label>
-                    <textarea id="test-scores" name="test-scores" rows="3" placeholder="List your test scores..." required></textarea>
-                </div>
-
-                <!-- Essays -->
-                <div class="input-group">
-                    <label for="essays">Essays:</label>
-                    <textarea id="essays" name="essays" rows="4" placeholder="Share the topics of your college essays..." required></textarea>
-                </div>
-
-                <!-- Profile Picture -->
-                <div class="input-group">
-                    <label for="profile-pic">Upload Profile Picture:</label>
-                    <input type="file" id="profile-pic" name="profile-pic" accept="image/*" required>
-                </div>
-
-                <!-- Submit Button -->
-                <button type="submit" class="btn">Complete Profile</button>
-            </form>
+    <!-- Top Navigation Bar -->
+    <header>
+        <div class="top-bar">
+            <input type="text" class="search-bar" placeholder="Search...">
+            <div class="profile-info">
+                <img src="anonymous-profile.png" alt="Profile" class="profile-pic">
+                <p>Username</p>
+            </div>
         </div>
-    </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <div class="container">
+            <!-- Left Side (Posts/Interesting Facts) -->
+            <section class="main-content">
+                <article class="post">
+                    <h3>Interesting Statistics from US Schools</h3>
+                    <p>Statistics about acceptance rates, SAT scores, etc.</p>
+                    <div class="post-icons">
+                        <span>👍</span>
+                        <span>💬</span>
+                        <span>🔄</span>
+                        <span>📌</span>
+                    </div>
+                </article>
+
+                <article class="post">
+                    <h3>School Event</h3>
+                    <p>A post about upcoming school events.</p>
+                    <div class="post-icons">
+                        <span>👍</span>
+                        <span>💬</span>
+                        <span>🔄</span>
+                        <span>📌</span>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Right Side (Profile Recommendations) -->
+            <aside class="profile-recommendations">
+                <h3>Recommended Profiles</h3>
+                <div class="profile-recommendation">
+                    <img src="anonymous-profile.png" alt="Profile" class="small-profile-pic">
+                    <p>Profile 1</p>
+                </div>
+                <div class="profile-recommendation">
+                    <img src="anonymous-profile.png" alt="Profile" class="small-profile-pic">
+                    <p>Profile 2</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Bottom Navigation Bar -->
+    <footer>
+        <div class="bottom-bar">
+            <span>💬 Messages</span>
+            <span>🔧 Tools</span>
+            <span>👥 Contacts</span>
+            <span>📝 Posts</span>
+        </div>
+    </footer>
 </body>
 </html>
