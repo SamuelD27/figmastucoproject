@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StuCo - General Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-box">
+            <h2>Complete Your Profile</h2>
+            <form action="profile_personalization.html" method="post">
+                <!-- First Name -->
+                <div class="input-group">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+
+                <!-- Surname -->
+                <div class="input-group">
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" name="surname" required>
+                </div>
+
+                <!-- Age -->
+                <div class="input-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="13" required>
+                </div>
+
+                <!-- Grade -->
+                <div class="input-group">
+                    <label for="grade">Grade:</label>
+                    <input type="text" id="grade" name="grade" placeholder="e.g., 12th grade" required>
+                </div>
+
+                <!-- Role: High School or College Student -->
+                <div class="input-group">
+                    <label for="role">You are a:</label>
+                    <select id="role" name="role" required>
+                        <option value="highschool">High School Student</option>
+                        <option value="college">College Student</option>
+                    </select>
+                </div>
+
+                <!-- Country -->
+                <div class="input-group">
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" name="country" required>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn">Continue to Personalize</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
